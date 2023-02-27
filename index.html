@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omex</title>
+    <meta name="description" content="Авто в лизинг для физических лиц ">
+    <link rel="stylesheet" href="./aseet/normalize.css">
+    <link rel="stylesheet" href="./aseet/stylesheet.css">
+    <link rel="stylesheet" href="./aseet/style.css">
+   
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="header">
+    <div class="header_logo"><img data-src="/aseet/img/logo.png" alt="#"><hr><span>лизинговая компания</span></div>
+    <div class="header_menu">
+        <nav class="menu">
+            <ul class="menu_item">
+              <li class="menu_link active">
+                <a href="#">Лизинг</a>
+                <ul>
+                  <li><a href="#">Для личного пользования</a></li>
+                  <li><a href="#">Для юридических диц</a></li>
+                  <li><a href="#">Калькулятор</a></li>
+                </ul>
+              </li>
+              <li class="menu_link"><a href="#">Каталог</a></li>
+              <li class="menu_link"><a href="#">О нас</a></li>
+            </ul>
+          </nav>
+          <button class="btn btn_header">Оставить заявку</button>
+    </div>
+    
+        </div>
+      </div>
+    </header>
+<main>
+    <div class="container main"> 
+      <div class="slider-container">
+        <div class="slider-images">
+          <div class="slider-image active" data-slide="1">
+            <div class="background">
+              <h1>Авто в лизинг для физических лиц </h1>
+            <p>Получите машину за 5 дней</p>
+            <button class="btn main_btn">Оставить заявку</button>
+            </div>
+            <img src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="2">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц </span>
+            <p>Получите машину за 4 дней</p>
+            <button class="btn main_btn">Оставить заявку</button>
+            </div>
+            <img src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="3">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц </span>
+            <p>Получите машину за 3 дней</p>
+            <button class="btn main_btn">Оставить заявку</button>
+            </div>
+            <img src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="4">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц </span>
+            <p>Получите машину за 2 дней</p>
+            <button class="btn main_btn">Оставить заявку</button>
+            </div>
+            <img src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="5">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц </span>
+            <p>Получите машину за 1 дней</p>
+            <button class="btn main_btn">Оставить заявку</button>
+            </div>
+            <img src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="6">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц</span>
+            <p>Получите машину за 1,5 дней</p>
+            <button class="btn main_btn">Оставить заявку</button>
+            </div>
+            <img src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+        </div>
+       
+        <div class="slider-dots">
+          <span class="slider-dot active" data-slide="1"></span>
+          <span class="slider-dot" data-slide="2"></span>
+          <span class="slider-dot" data-slide="3"></span>
+          <span class="slider-dot" data-slide="4"></span>
+          <span class="slider-dot" data-slide="5"></span>
+          <span class="slider-dot" data-slide="6"></span>
+
+        </div>
+        <div class="slider-controls">
+          <span class="slider-prev"><img src="/aseet/img/back.png" alt=""></span>
+          <span class="slider-next"><img src="/aseet/img/next.png" alt=""></span>  
+        </div>
+      </div>
+
+    </div>
+</main>
+<section class="container">
+ 
+    <form>
+      <div class="form-group">
+        <label for="carPriceSlider">Car Price:</label>
+        <div class="input-group">
+          <input type="range" min="1000000" max="6000000" step="10000" value="1000000" class="slider" id="carPriceSlider">
+          <div id="carPriceValue" class="value">1,000,000</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="downPaymentSlider">Down Payment:</label>
+        <div class="input-group">
+          <input type="range" min="10" max="60" step="10" value="10" class="slider" id="downPaymentSlider">
+          <div id="downPaymentValue" class="value">10%</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="leaseTermSlider">Lease Term:</label>
+        <div class="input-group">
+          <input type="range" min="1" max="60" step="1" value="12" class="slider" id="leaseTermSlider">
+          <div id="leaseTermValue" class="value">12 months</div>
+        </div>
+      </div>
+    </form>
+    <div class="output">
+      <div class="output-item">
+        <div class="label">Первоначальный платеж:</div>
+        <div id="initialPaymentValue" class="value">0.00</div>
+      </div>
+      <div class="output-item">
+        <div class="label">Ежемесячно оплата:</div>
+        <div id="monthlyPaymentValue" class="value">0.00</div>
+      </div>
+      <div class="output-item">
+        <div class="label">Общая стоимость:</div>
+        <div id="totalCostValue" class="value">0.00</div>
+      </div>
+    </div>
+  
+</section>
+
+
+    <script src="index.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
+
+
+
+        <!-- <a class="prev"><img data-src="/aseet/img/back.png" alt=""></a> -->
+       
